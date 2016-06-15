@@ -20,7 +20,6 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
 ```ruby
 PolishPostalCodes::Info.get('41-400')
 => {:city=>"Mysłowice", :county=>"Mysłowice", :province=>"śląskie"}
