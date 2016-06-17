@@ -1,4 +1,4 @@
-# PolishPostalCodes
+# PolishPostalCodes [![Build Status](https://travis-ci.org/dbackowski/polish_postal_codes.svg?branch=master)](https://travis-ci.org/dbackowski/polish_postal_codes)
 
 Library for getting information about polish postal codes.
 
