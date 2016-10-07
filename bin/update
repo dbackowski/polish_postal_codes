@@ -6,7 +6,7 @@ require 'tempfile'
 
 puts 'downloading...'
 
-data = PStore.new('lib/polish_postal_codes.pstore')
+data = PStore.new(File.expand_path('../../lib/polish_postal_codes.pstore', __FILE__))
 tmp_file = Tempfile.new('spispna.pdf')
 tmp_file.write(open('https://www.poczta-polska.pl/hermes/uploads/2013/11/spispna.pdf').read)
 tmp_file.flush
