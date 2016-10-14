@@ -3,7 +3,7 @@ require 'pstore'
 
 module PolishPostalCodes
   class Info
-    DATA = PStore.new('lib/polish_postal_codes.pstore')
+    DATA = PStore.new(File.expand_path('../polish_postal_codes.pstore', __FILE__))
 
     def self.get(postal_code)
       DATA.transaction(true) { |postal_codes| postal_codes[postal_code] }
